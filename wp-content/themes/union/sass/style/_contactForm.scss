@@ -1,0 +1,41 @@
+
+
+.gform_wrapper {
+	text-align: center;
+	label {
+		@extend %base-font-medium;
+		@include adjust-font-size-to(18px, 2);
+		text-transform: uppercase;
+	}
+		@include rhythm(0, 0, 0, 2); //Mrgin top, Padding top, Padding bottom, Margin bottom
+		input[type="text"],
+		input[type="email"],
+		textarea {
+			border: solid 1px $black;
+			padding: 0 1em;
+			@include rhythm(0, .5, .5, 0); //Mrgin top, Padding top, Padding bottom, Margin bottom
+			width: 100%;
+		@include box-sizing(border-box); //This may not work on older devices
+		&:focus {
+			border: solid 1px $black;
+		}
+	}
+}
+	
+
+
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	@include rhythm(.5, .5, 0, .5); //Mrgin top, Padding top, Padding bottom, Margin bottom
+	border: solid 1px $grey;
+	background: $white;
+	padding: 10px 20px;
+	font-family: 'Montserrat-Regular',sans-serif;
+	&:hover,
+	&:focus {
+		background: $black;
+		color: $white;
+	}
+}

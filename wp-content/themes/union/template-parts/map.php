@@ -1,0 +1,1 @@
+<div class="snap" id="map_canvas"></div>

@@ -1,0 +1,448 @@
+
+
+#progress-bar {
+	height: 3px;
+	width: 0;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 2000;
+	background-color: red;
+}
+
+//Home slider 
+#slides {
+	.inner {
+		.inner-content {
+		}
+	}
+	.scroll {
+		@include adjust-font-size-to(72px, 1.5);
+		h1 {
+			@include adjust-font-size-to(30px, 1.5);
+			color: $white;
+			color: $light-green;
+			display: none;
+			@include breakpoint($medium){
+				@include adjust-font-size-to(36px, 2);
+				display: block;
+			}
+		}
+	}
+}
+
+
+
+.logo-wrap {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.image-cover {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	z-index: 1;
+	background-image: url(../img/cover.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: rgba($dark-green, 0.6);
+}
+
+
+//Bounce effect
+/* @include keyframes(bounce) {
+	0%, 20%, 50%, 80%, 100% {
+		@include transform(translateY(0));
+	}
+	40% {
+		@include transform(translateY(-30px));
+	}
+	60% {
+		@include transform(translateY(-15px));
+	}
+}
+
+.bounce {
+	@include animation(bounce 2s infinite);
+	text-decoration: none;
+	i {
+		//color: $light-green;
+		color: $white;
+	}
+	} */
+
+
+	@include keyframes(bounce) {
+		0%, 20%, 50%, 80%, 100% {
+			@include transform(translateY(0));
+		}
+		40% {
+			@include transform(translateY(-30px));
+		}
+		60% {
+			@include transform(translateY(-15px));
+		}
+	}
+
+	.bounce {
+		@include animation(bounce 2s infinite);
+	}
+
+	.navigation-wrapper {
+		background-color: rgba($light-green, .95);
+		.section-width {
+			display: table;
+			width: 95%;
+			margin: 0 auto;
+			padding: 10px;
+			.inner {
+				position: relative;
+				vertical-align: middle;
+				display: table-cell;
+				@include rhythm(0, 0, 0, 0);
+			//text-align: center;
+			.union-logo {
+				width: 26px;
+			}
+			.primary-navigation {
+				display: none;
+				margin: 0 auto;
+				float: right;
+				@include rhythm(.1, 0, 0, 0);
+				ul {
+					padding: 0px;
+					margin: 0px;
+					@include clearfix;
+					li {
+						float: left;
+						margin: 0 1em;
+						@include adjust-font-size-to(15px, 1);
+						a {
+							color: $mid-green;
+							text-decoration: none;
+							text-transform: uppercase;
+							&:hover {
+								color: $dark-green;
+							}
+							&.current {
+								color: $white;
+								border-bottom: solid $white 3px;
+							}
+						}
+						&.current a {
+							color: $white;
+							border-bottom: solid $white 3px;
+						}
+					}
+				}
+				@include breakpoint($large) {
+					display: block;
+				}
+			}
+		}
+	}
+	&.fixed {
+		z-index: 9999;
+		position: fixed;
+		left: 0;
+		top: 0;
+		width: 100%;
+		&.full {
+			top: 0;
+			bottom: 0;
+		}
+	}
+}
+
+
+#nav-toggle {
+	position: absolute;
+	right: 2em;
+	top: 10px;
+	cursor: pointer;
+	display: block;
+	@include breakpoint($large){
+		display: none;
+	}
+	a {
+		display: block;
+	}
+}
+
+#nav-toggle span, #nav-toggle span:before,
+#nav-toggle span:after {
+	cursor: pointer;
+	border-radius: 1px;
+	height: 5px;
+	width: 35px;
+	background: $black;
+	position: absolute;
+	display: block;
+	content: '';
+}
+#nav-toggle span:before {
+	top: -10px; 
+}
+#nav-toggle span:after {
+	bottom: -10px;
+}
+
+#nav-toggle span, #nav-toggle span:before, #nav-toggle span:after {
+	transition: all 500ms ease-in-out;
+}
+#nav-toggle.active span {
+	background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+	top: 0;
+}
+#nav-toggle.active span:before {
+	transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+	transform: translateY(-10px) rotate(-45deg);
+	top: 10px;
+}
+
+
+
+
+.image-seq {
+	position: relative;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: url(../img/seq/Incr0000.jpg) no-repeat center center;
+	background-size: cover;
+}
+
+
+// video {
+//   max-width: 100%;
+//   height: auto;
+// }
+
+// iframe,
+// embed,
+// object {
+//   max-width: 100%;
+// }
+
+
+/* .videos {
+  width: 90%;
+  height: 10% !important;
+  overflow: hidden;
+  position: relative;
+  } */
+
+  .showreel {
+  	position: relative;
+  	//max-width: $max-width;
+  	//padding-top: 48px;
+  	margin: 0 auto;
+  	.title-wrapper {
+  		//@extend %bdr;
+  		@include clearfix;
+  		position: absolute;
+  		z-index: 2;
+  		top: 0;
+  		bottom: 0;
+  		left: 0;
+  		right: 0;
+  		text-align: center;
+  		.showreel-title-wrapper {
+  			position: absolute;
+  			width: 100%;
+  			text-align: center;
+				top: 50%;
+				-webkit-transform: translateY(-50%);
+				-ms-transform: translateY(-50%);
+				transform: translateY(-50%);
+				height: 100px;
+  			h1 {
+  				display: block;
+  				@include rhythm(0, 0, 0, 0);
+  				&.border-bottom:after {
+  					padding-top: 10px; 
+  				}
+  			}
+  			.play-icon {
+  				width: 100%;
+  				text-decoration: none;
+  				@include adjust-font-size-to(54px, 1);
+  				@include breakpoint($medium){
+  					@include adjust-font-size-to(76px, 1);
+  				}
+  				&:hover {
+  					cursor: pointer;
+  				}
+  			}
+  		}
+  	}
+  	.fluid-width-video-wrapper {
+  		padding-top: 56% !important;
+  	}
+  }
+
+  .poster-image {
+  	width: 100%;
+  	position: absolute;
+  	z-index: 1;
+  }
+
+  .color-cover {
+  	background-color: rgba($dark-green, .9);
+  	position: absolute;
+  	z-index: 2;
+  	height: auto;
+  	width: 100%;
+  	top: 0;
+  	bottom: 0;
+  	transition: all 500ms ease-in-out;
+  }
+
+  .slick-active {
+  	.color-cover {
+  		background-color: rgba($dark-green, .5);
+  		transition: all 500ms ease-in-out;
+  	}
+  }
+
+  .two-col-module {
+  	@include clearfix;
+  	.col1, .col2 {
+  		@extend %bdr;
+  		@include span(6)
+  	}
+  	.col1 {
+
+  	}
+  	.col2 {
+
+  	}
+  }
+
+  #map_canvas {
+  	display: block;
+  	width: 100%;
+  	height: 450px;
+  }
+
+  .intro-vimeo-video {
+  	background-color: $black;
+  }
+
+
+  .player .controls-wrapper, .player .video-wrapper {
+  	opacity: 0 !important;
+  }
+
+
+
+
+/*
+ * Responsive YouTube, Vimeo, Embed, and HTML5 Videos with CSS
+ * http://www.jonsuh.com
+ *
+ * Copyright (c) 2012 Jonathan Suh
+ * Free to use under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ */
+
+
+/* .js-video {
+	height: 0;
+	//padding-top: 25px;
+	padding-bottom: 67.5%;
+	position: relative;
+	overflow: hidden;
+}
+.js-video.vimeo {
+	padding-top: 0;
+}
+.js-video.widescreen {
+	padding-bottom: 57.25%;
+}
+ 
+.js-video embed, .js-video iframe, .js-video object, .js-video video {
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+*/
+
+/*
+@media (max-width: 767px) {
+	.js-video {
+		padding-top: 0;
+	}
+	} */
+
+
+	a {
+		color: $white;
+		text-decoration: none;
+		text-transform: lowercase;
+	}
+
+
+	.date {
+		@include adjust-font-size-to(16px, 1);
+		@include rhythm(0, .5, .5, 1);
+		text-transform: uppercase;
+		display: block;
+		&.border-bottom {
+			&:after {
+				content: "";
+				border-bottom: solid $black 1px;
+				@include rhythm(0, 0, 1, 1);
+				display: block;
+				width:60px;
+				margin: 0 auto;		
+			}
+			@include rhythm(0, 0, 0, 1);
+		}
+		span {
+			@include adjust-font-size-to(12px, 1);
+			//text-transform: none !important;
+		}
+	}
+
+	.news-press-title  {
+		@include adjust-font-size-to(48px, 2);
+	}
+
+	footer {
+		p {
+			@include rhythm(0, .5, .5, 0);
+			a {
+				@include border-radius(50%);
+				display: table;
+				width: 50px;
+				height: 50px;
+				border: solid 1px $grey;
+				padding: 10px;
+				@include adjust-font-size-to(24px, 1);
+				color: $grey;
+				text-align: center;
+				display: inline-block;
+				i {
+					display: table-cell;
+					vertical-align: middle;
+				}
+			}
+		}
+	}

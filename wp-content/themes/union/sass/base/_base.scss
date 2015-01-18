@@ -1,0 +1,397 @@
+//bodoniflfbold
+@font-face {
+	font-family: 'flexslider-icon';
+	src: url('../fonts/flex/flexslider-icon.eot');
+	src: url('../fonts/flex/flexslider-icon.eot?#iefix') format('embedded-opentype'),
+	url('../fonts/flex/flexslider-icon.woff') format('woff'),
+	url('../fonts/flex/flexslider-icon.ttf') format('truetype'),
+	url('../fonts/flex/flexslider-icon.svg#flexslider-icon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: "Flaticon";
+	src: url("../fonts/flaticon/flaticon.eot");
+	src: url("../fonts/flaticon/flaticon.eot#iefix") format("embedded-opentype"),
+	url("../fonts/flaticon/flaticon.woff") format("woff"),
+	url("../fonts/flaticon/flaticon.ttf") format("truetype"),
+	url("../fonts/flaticon/flaticon.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+	font-family: Flaticon;
+	@include adjust-font-size-to(14px);
+	font-style: normal;
+	}.flaticon-collapse3:before {
+		content: "\e000";
+	}
+	.flaticon-expand22:before {
+		content: "\e001";
+	}
+	.flaticon-next15:before {
+		content: "\e002";
+	}
+	.flaticon-previous11:before {
+		content: "\e003";
+	}
+
+
+
+	@font-face {
+		font-family: 'futura_lt_btlight';
+		src: url('../fonts/futura/futult__-webfont.eot');
+		src: url('../fonts/futura/futult__-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/futura/futult__-webfont.woff2') format('woff2'),
+		url('../fonts/futura/futult__-webfont.woff') format('woff'),
+		url('../fonts/futura/futult__-webfont.ttf') format('truetype'),
+		url('../fonts/futura/futult__-webfont.svg#futura_lt_btlight') format('svg');
+		font-weight: normal;
+		font-style: normal;
+
+	}
+
+	@font-face {
+		font-family: 'futura_md_btmedium';
+		src: url('../fonts/futura/futumd__-webfont.eot');
+		src: url('../fonts/futura/futumd__-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/futura/futumd__-webfont.woff2') format('woff2'),
+		url('../fonts/futura/futumd__-webfont.woff') format('woff'),
+		url('../fonts/futura/futumd__-webfont.ttf') format('truetype'),
+		url('../fonts/futura/futumd__-webfont.svg#futura_md_btmedium') format('svg');
+		font-weight: normal;
+		font-style: normal;
+
+	}
+
+	@font-face {
+		font-family: 'futura_md_btbold';
+		src: url('../fonts/futura/futubd__-webfont.eot');
+		src: url('../fonts/futura/futubd__-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/futura/futubd__-webfont.woff2') format('woff2'),
+		url('../fonts/futura/futubd__-webfont.woff') format('woff'),
+		url('../fonts/futura/futubd__-webfont.ttf') format('truetype'),
+		url('../fonts/futura/futubd__-webfont.svg#futura_md_btbold') format('svg');
+		font-weight: normal;
+		font-style: normal;
+
+	}
+
+	@font-face {
+		font-family: 'futura_ltbold';
+		src: url('../fonts/futura/futuralt-bold-webfont.eot');
+		src: url('../fonts/futura/futuralt-bold-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/futura/futuralt-bold-webfont.woff2') format('woff2'),
+		url('../fonts/futura/futuralt-bold-webfont.woff') format('woff'),
+		url('../fonts/futura/futuralt-bold-webfont.ttf') format('truetype'),
+		url('../fonts/futura/futuralt-bold-webfont.svg#futura_ltbold') format('svg');
+		font-weight: normal;
+		font-style: normal;
+
+	}
+
+	%base-font { 
+		font-family: 'futura_lt_btlight';
+	}
+	%base-font-medium { 
+		font-family: 'futura_md_btmedium';
+	}
+	%base-font-bold { 
+		font-family: 'futura_md_btbold';
+	}
+	%base-font-extra-bold { 
+		font-family: 'futura_ltbold';
+	}
+
+	%flaticon {
+		font-family: "Flaticon";
+	}
+
+	$min-max-width: 768px;
+	$max-width: 1280px;
+//$full-max-width: 1024px;
+
+
+
+a {
+	outline: none;
+	&:active {
+		outline: none;
+	}
+}
+
+.min-max-width {
+	max-width: $min-max-width;
+	margin: 0 auto;
+}
+
+
+.text-center {
+	text-align: center;
+}
+
+$white: #fff;
+$black: #202020;
+$dark-black: #000000;
+$grey: #4d4d4d;
+$lighter-green: #e6e9e7;
+$light-green: #8f9d8d;
+
+$mid-green: #384f44;
+$dark-green: #001a11;
+
+.white {
+	color: $white;
+}
+
+.black {
+	color: $black;
+}
+
+.grey {
+	color: $grey;
+}
+
+.lighter-green-bg {
+	background-color: $lighter-green;
+}
+
+
+.light-green {
+	color: $light-green;
+}
+
+.light-green-bg {
+	background-color: $light-green;
+}
+
+.dark-green-bg {
+	background-color: $dark-green;
+}
+
+.black-bg {
+	background-color: $dark-black;
+}
+
+$base-font-size: 18px;
+$base-line-height: 24px;
+$rhythm-unit: 'rem';
+
+@include establish-baseline;
+
+//Include sprites 
+// @import "icons/*.png";
+// @include all-icons-sprites;
+// $icon-sprite: sprite-map("icons/*.png");
+
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+	@include box-sizing(border-box);
+}
+
+#info {
+	position: fixed;
+	background-color: rgba(black, .7) ;
+	z-index: 11200;
+	width: 100%;
+	text-align: center;
+	color: yellow;
+}
+
+
+//breakpoint
+$small: 600px;
+$medium: 768px;
+$large: 1024px;
+
+$susy: (
+	columns: 12,
+	//gutters: 1/4,
+	gutters: 0,
+	math: fluid,
+	output: float,
+	gutter-position: split,
+	  debug: (
+    //image: show,
+    //color: rgba($grey, .5),
+    //output: overlay,
+    //toggle: top right,
+  ),
+		//gutter-position: inslide
+	);
+
+
+body {
+	@extend %base-font;
+	@include container;
+}
+
+html {
+	@include adjust-leading-to(1.5); 
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+//Helpers
+%bdr {
+	outline:solid red 1px;
+}
+
+.hide {
+	display: none !important;
+}
+
+
+%center {
+	text-align: center;
+}
+
+.center {
+	@extend %center;
+}
+
+h1, h2, h3, h4, h5 {
+	font-weight: 100;
+	@extend %base-font;
+
+}
+
+/* 	.border-bottom {
+		&:after {
+			content: "";
+			border-bottom: solid $black 1px;
+			@include rhythm(0, 0, 1, 0);
+			display: block;
+			width:60px;
+			margin: 0 auto;		
+		}
+		@include rhythm(0, 0, 0, 2);
+	} */
+
+h1 {
+	@include adjust-font-size-to(44px, 2);
+	@include rhythm(0, 0, 0, 1.5);
+	letter-spacing: 1px;
+	&.border-bottom {
+		&:after {
+			content: "";
+			border-bottom: solid $white 3px;
+			@include rhythm(0, 2, 0, 0);
+			display: block;
+			width:90px;
+			margin: 0 auto;		
+		}
+	}
+	&.black {
+		&.border-bottom {
+			&:after {
+				border-bottom: solid $black 4px !important;
+			}
+		}
+	}
+	@include breakpoint($medium){
+		@include adjust-font-size-to(65px, 3);
+	}
+}
+
+h2 {
+	@include adjust-font-size-to(24px, 1.5);
+	@include rhythm(0, 0, 0, 1.5);
+		&.border-bottom {
+		&:after {
+			content: "";
+			border-bottom: solid $black 3px;
+			@include rhythm(0, 1.5, 0, 0);
+			display: block;
+			width:90px;
+			margin: 0 auto;		
+		}
+	}
+	&.white {
+		&.border-bottom {
+			&:after {
+				border-bottom: solid $white 2px !important;
+			}
+		}
+	}
+	@include breakpoint($medium){
+		@include adjust-font-size-to(30px, 1.5);
+	}
+}
+
+
+.section-width {
+	max-width: $max-width;
+	margin: 0 auto;
+	padding: 0 1.5em;
+	//@extend %bdr;
+	.inner {
+		@include rhythm(0, 3, 3, 0);
+		display: block;
+		position: relative;
+		@include breakpoint($medium){
+			@include rhythm(0, 4, 3, 0);
+		}
+	}
+	.inner-top {
+		@include rhythm(0, 3, 1, 0);
+		display: block;
+		position: relative;
+		//margin-top: 54px;
+		//@extend %bdr;
+	}
+}
+
+
+.inner-section {
+	@include rhythm(0, 2, 2, 0); //Margin top, Padding top, Padding bottom, Margin bottom
+}
+
+.inner-section-bigger {
+	@include rhythm(0, 5, 5, 0); 
+	@include breakpoint($medium){
+		@include rhythm(0, 3, 3, 0); 
+	}
+}
+
+
+
+article {
+	p {
+		@include adjust-font-size-to(21px, 1.2);
+		@include rhythm(0, 0, 0, 1);
+	}
+}
+
+.italics {
+	font-style: italic;
+}
+
+strong {
+	@extend %base-font-medium;
+}
+
+/* Vertical align */
+%vertical-align {
+  position: relative;
+  top: 50%;
+  @include translateY(-50%)
+}
+
+.vertical-align {
+	//@extend %vertical-align;
+}

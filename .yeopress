@@ -1,0 +1,15 @@
+{
+	"wpVer": "3.5.1",
+	"url": "http://union-new-website",
+	"tablePrefix": "wp_",
+	"dbHost": "localhost",
+	"dbName": "union-new-website",
+	"dbUser": "root",
+	"dbPass": "root",
+	"git": false,
+	"customDirs": false,
+	"installTheme": false,
+	"wpDir": ".",
+	"contentDir": "wp-content",
+	"saltKeys": "define('AUTH_KEY',         'f:Nik+Zt^*PK*}rD,.:-NN?a76Nua|;37Z#ROsD*pEGc|(+$^q =2kIR`xqM6{vL');\ndefine('SECURE_AUTH_KEY',  '<pZwc*c(z+@ .-cw2 T}n@-(zA5hYk{uMsj@{B+{L8c*vOUc(WOR[2xoeCV E@ox');\ndefine('LOGGED_IN_KEY',    ']GAYV7:=Z,&Kj=HW2BQCgyfIM{UmT2`%l3a@,iC5H,`I)mvfn=7h_*O>%rRy-^BD');\ndefine('NONCE_KEY',        'es_I;0,9`M5>lBYI{?${jp`Gu;=e)ef@X^=nS?CtN3z:,v1,-/%XfJ_[@!uO-zz`');\ndefine('AUTH_SALT',        'dED-x*M,n2q--tJ8f k*Y!-pS|&EChTRX$M;!3Jh&y=L>M2kiC 1!MjqbA.H7Pb!');\ndefine('SECURE_AUTH_SALT', ' |tMkUft;/5W;hi+m5 ^SJK::r~[%nNk{3ut8:LF+DWxE!f|#T?smc^/=dCuiL!-');\ndefine('LOGGED_IN_SALT',   '}6#m/qk+-TgLkG@Lf[Az.3&yD-F;dL%:8@{rirU$^S8zSKjh.(>6J-NRC,7hTPx)');\ndefine('NONCE_SALT',       'jZFv/h/VZ=yc-j%TTI=l{+drje2Ng|)MkCPXj?15bH#@-[6!)g|WQx(YF`1BdP (');\n"
+}

@@ -1,0 +1,84 @@
+.gallery {
+  //overflow:hidden;
+  background-color: $dark-green;
+}
+
+.image-carousel {
+  //width: 100%;
+  background-color: $dark-green;
+  max-width: none;
+  .rsSlide {
+    opacity: 0.4;
+    @include transition(opacity 0.5s ease);
+    overflow: hidden;
+  }
+  .rsSlide.rsActiveSlide {
+    opacity: 1;
+    @include transition(all 0.3s ease);
+  }
+  @include box-sizing(border-box);
+  .image-slide {  
+    float: left;
+    width: 100%;
+    //@extend %bdr;
+    position: relative;
+    overflow: hidden;
+    .gallery-link {
+      @include box-sizing(border-box);
+      display: block;
+      //margin: 5px;
+      overflow: hidden;
+      position: relative;
+      img {
+          @include transition(all 0.3s ease);
+        }
+        &:hover {
+          img { 
+            -webkit-transform: scale(1.1); 
+            -moz-transform: scale(1.1);
+            transform: scale(1.1);          
+          }
+        }
+    }
+      &.quad {
+        .quad-holder {
+          position: relative; 
+          float: left;
+          overflow: hidden;
+          width: 50%;
+          @include box-sizing(border-box);
+          &:nth-child(3n) {
+            clear: left;
+          }
+        }
+      }
+  }
+  .rsBullets {
+    position:absolute;
+    bottom:0;
+    width:100%;
+    text-align:center;
+
+    .rsBullet {
+      cursor:pointer;
+      display:inline-block;
+      width:8px;
+      height:8px;
+      background:#ccc;
+      @include border-radius(4px);
+      margin:0 3px;
+
+      &.rsNavSelected {
+        //background:$textColor;
+      }
+    }
+  }
+}
+
+/* @include respond-min($screenLarge){
+  .image-carousel {
+    .rsBullets {
+      bottom:50px;
+    }
+  }
+} */
