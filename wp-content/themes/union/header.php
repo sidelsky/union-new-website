@@ -27,7 +27,17 @@
 	*/?>
 
 	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
-	<script src="<?php bloginfo('template_directory'); ?>/js/modernizr-2.6.2.min.js"></script>	
+	<script src="<?php bloginfo('template_directory'); ?>/js/modernizr-2.6.2.min.js"></script>
+
+	<script src="<?php bloginfo('template_directory'); ?>/js/scripts.js"></script>
+
+	<!--[if lt IE 9]>
+	  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/skrollr.ie.js"></script>
+	<![endif]-->
+
+<!-- Google  -->
+<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.main.js"></script>
 
 </head>
 

@@ -32,62 +32,22 @@
   ga('create','UA-xxxxx-x');ga('send','pageview');*/
 </script>
 
-<script src="<?php bloginfo('template_directory'); ?>/js/skrollr.js"></script>
-
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery.flexslider.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery.touchwipe.1.1.1.js"></script>
-
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery.matchHeight.js"></script>
-
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery.animate-enhanced.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/hammer.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery.superslides.js"></script>
-
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery.fitvids.js"></script>
-
-<script src="<?php bloginfo('template_directory'); ?>/js/froogaloop.js"></script>
-
-
 <?php/*
-	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.panelSnap.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/skrollr.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.matchHeight.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.animate-enhanced.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/hammer.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.superslides.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.fitvids.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/froogaloop.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.nav.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.snappoint-1.5.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.touch-punch.min.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/fullscreen_background.js"></script>
+	<script src="<?php bloginfo('template_directory'); ?>/js/slick.js"></script>
 */?>
 
-
-<?php/*
-	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.singlePageNav.js"></script>
-*/?>
-
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery.nav.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery.snappoint-1.5.js"></script>
-<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.touch-punch.min.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/fullscreen_background.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/slick.js"></script>
-
-<?php/*
-	<script src="<?php bloginfo('template_directory'); ?>/js/jquery.scrollTo.js"></script>
-
-  
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery.scrollsnap.js"></script>
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery.scrollstop.js"></script>
-
-*/?>
-
-
-
-<!--[if lt IE 9]>
-  <script type="text/javascript" src="<?php bloginfo('template_directory'); ?>/js/skrollr.ie.js"></script>
-<![endif]-->
-
-<!-- <script src="<?php bloginfo('template_directory'); ?>/js/jquery.mixitup.js"></script> -->
-
-
-<!-- Google  -->
-<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-
-
-
-<script src="<?php bloginfo('template_directory'); ?>/js/jquery.main.js"></script>
 
 
 <?php wp_footer(); ?>

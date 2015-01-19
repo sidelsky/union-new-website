@@ -24,7 +24,7 @@
 				</li>
 			</ul>
 
-			<div id="gallery-production" style="height: 48px;">&nbsp;</div>
+			<div id="gallery-production">&nbsp;</div>
 
 		</div>
 
@@ -138,6 +138,22 @@
 					function onPlayProgress(data, id) {
 						status.text(data.seconds + 's played');
 					}
+
+
+						$(".slick-next").attr("id","slick-next");
+						$(".slick-prev").attr("id","slick-prev");
+
+
+					//document.getElementById("slick-next").addEventListener("click", function(){
+						$("#slick-next").click(function(){
+					    player.api("pause");
+						});
+
+						$("#slick-prev").click(function(){
+					    player.api("pause");
+						});
+
+
 				});
 			</script>
 

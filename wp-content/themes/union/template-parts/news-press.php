@@ -10,10 +10,10 @@
 			<div class="toggle-wrapper">
 				<ul class="toggle">
 					<li id="latest-news-toggle" class="active">
-						<a href="#">Latest news</a>
+						<a href="javascript:void(0)">Latest news</a>
 					</li>
 					<li id="recent-press-toggle">
-						<a href="#">Recent press</a>
+						<a href="javascript:void(0)">Recent press</a>
 					</li>
 				</ul>
 			</div>

@@ -310,7 +310,7 @@
   	transition: all 500ms ease-in-out;
   }
 
-  .slick-active {
+  .slick-center {
   	.color-cover {
   		background-color: rgba($dark-green, .5);
   		transition: all 500ms ease-in-out;
@@ -417,6 +417,7 @@
 		}
 		span {
 			@include adjust-font-size-to(12px, 1);
+			color: grey;
 			//text-transform: none !important;
 		}
 	}
